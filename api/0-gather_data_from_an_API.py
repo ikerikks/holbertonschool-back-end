@@ -12,7 +12,7 @@ if __name__ == "__main__":
     total = 0
     tasks = []
     response2 = get('https://jsonplaceholder.typicode.com/users/')
-    second_data = response2.json()
+    data2 = response2.json()
 
     for i in second_data:
         if i.get('id') == int(argv[1]):
